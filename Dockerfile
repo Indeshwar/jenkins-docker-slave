@@ -17,7 +17,7 @@ RUN apt-get update && \
 # Add user jenkins to the image
     adduser --quiet jenkins && \
 # Set password for the jenkins user (you may want to alter this).
-    echo "jenkins:jenkins" | chpasswd && \
+    echo "jenkins:password" | chpasswd && \
     mkdir /home/jenkins/.m2
 
 #ADD settings.xml /home/jenkins/.m2/
